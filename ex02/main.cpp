@@ -6,7 +6,7 @@
 /*   By: hbousset <hbousset@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 18:44:06 by hbousset          #+#    #+#             */
-/*   Updated: 2025/11/16 19:32:59 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:58:11 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ int main()
 	}
 	catch(const std::exception& e)
 	{
-		std::cerr << "Exception caught: accessing negative index" << std::endl;
+		std::cerr << e.what() << std::endl;
+		// std::cerr << "Exception caught: accessing negative index" << std::endl;
 	}
 	return 0;
 }
